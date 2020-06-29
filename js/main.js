@@ -60,4 +60,24 @@ console.log(player["isAdult"]);
 // Beaucoup plus lisible pour un développeur 
 
 // ~~~~~~~ Exercice 5 ~~~~~~~~
+var car = {
+    type : "Clio",
+    brand : "Renault",
+    date : 2006,
+    color : "orange",
+    passengers : ["Mike", "Claire", "Anna", "Louis"]
+};
+
+console.log(car);
+
+console.log("Une " + car["brand"] + " " + car["type"] + " de couleur "
+ + car["color"] + ", modèle " + car["date"] + " a été aperçue avec à son bord 4 passagers");
+
+ console.log(car["passengers"][0]);
+ // tableau multi-dimentionel
+
+ console.log("4 individus ont été aperçus à son bord : " + car["passengers"][0] + " " + 
+ car["passengers"][1] + " "  + car["passengers"][2] + " " 
+ + car["passengers"][3]);
+
 // ~~~~~~~ Exercice 6 ~~~~~~~~  
