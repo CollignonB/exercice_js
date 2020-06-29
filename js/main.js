@@ -1,3 +1,4 @@
+// ~~~~~~~ Exercice 1 ~~~~~~~~ 
 var items = new Array();
 console.log(items);
 
@@ -8,3 +9,37 @@ console.log(items);
 
 items = ["a", "b"];
 console.log(items);
+
+// ~~~~~~~ Exercice 2 ~~~~~~~~ 
+var items = [
+    "première élément",
+    "deuxième élément",
+    "troisième élément",
+    "quatrième élément"
+] 
+
+console.log(items);
+console.log(items[1]);
+console.log(items[3]);
+console.log(items[0]);
+
+// ~~~~~~~ Exercice 3 ~~~~~~~~ 
+var player = [
+    "John",
+    "Doe",
+    34,
+    true
+];
+
+console.log(player);
+console.log(player[0]);
+console.log(player[0] + " " + player[1]);
+
+player[2] = 40;
+console.log(player[2]);
+
+// NON !!!!
+
+// ~~~~~~~ Exercice 4 ~~~~~~~~ 
+// ~~~~~~~ Exercice 5 ~~~~~~~~
+// ~~~~~~~ Exercice 6 ~~~~~~~~  
