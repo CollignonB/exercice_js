@@ -56,15 +56,15 @@ var citizen = {
     income: 60000,
     sexe: 1
 }
-
+console.log("~~~~~~~~ exo 8 ~~~~~~~~")
 console.log("Citizen identity :");
 for ( info in citizen){
-    //citizen[sexe] === 0 ? citizen[sexe] = "male": citizen[sexe] = "female";
-    if (citizen["sexe"] === 0){
-        citizen["sexe"] = "male";
-    } else if(citizen["sexe"] === 1) {
-        citizen["sexe"] = "female";
-    }
+    citizen["sexe"] === 0 ? citizen["sexe"] = "male": citizen["sexe"] = "female";
+    // if (citizen["sexe"] === 0){
+    //     citizen["sexe"] = "male";
+    // } else if(citizen["sexe"] === 1) {
+    //     citizen["sexe"] = "female";
+    // }
     console.log(info + " : " + citizen[info]);
 }
 
