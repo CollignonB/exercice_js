@@ -49,6 +49,7 @@ for (var item of items) {
     console.log(item);    
 }
 // ~~~~Exercice 8 ~~~~~~~
+console.log("~~~~~~~~ exo 8 ~~~~~~~~");
 var citizen = {
     firstname: "Jhon",
     lastname: "Doe",
@@ -56,16 +57,22 @@ var citizen = {
     income: 60000,
     sexe: 1
 }
-console.log("~~~~~~~~ exo 8 ~~~~~~~~")
+// citizen["sexe"] === 0 ? citizen["sexe"] = "male" : citizen["sexe"] = "female";
 console.log("Citizen identity :");
 for ( info in citizen){
-    citizen["sexe"] === 0 ? citizen["sexe"] = "male": citizen["sexe"] = "female";
-    // if (citizen["sexe"] === 0){
+        // if (citizen["sexe"] === 0){
     //     citizen["sexe"] = "male";
     // } else if(citizen["sexe"] === 1) {
     //     citizen["sexe"] = "female";
     // }
+   // console.log(citizen["sexe"]);
+    if (citizen[info] === citizen["sexe"]){
+      if (citizen["sexe"] === 0){console.log(info + " : Male");}
+      else if (citizen["sexe"] === 1){console.log(info + " : Female");}
+    }else {
     console.log(info + " : " + citizen[info]);
+    }
+
 }
 
 // ~~~~Exercice 9 ~~~~~~~
@@ -88,9 +95,18 @@ var citizens = [
     }
   ];
   console.log("~~~~~~~~ exo 9 ~~~~~~~~")
+  // for (var i = 0; i < 4; i++){
+  //   console.log("Citizen :");
+  //     for (var id in citizens[i]){
+  //         console.log(id + " : " + citizens[i][id]);
+  //     }
+  // }
   for (var i = 0; i < 4; i++){
-    console.log("Citizen :");
-      for (var id in citizens[i]){
-          console.log(id + " : " + citizens[i][id]);
-      }
+    console.log("Cititzen :");
+    var zblah = Object.keys(citizens[i]);
+    for (var j = 0; j < 2; j++){
+      j === 0 ? console.log(Object.keys(citizens[i])[j] + " : " +  citizens[i]["firstname"]) : console.log(Object.keys(citizens[i])[j] + " : " +  citizens[i]["lastname"]);
+      
+    }
   }
+
